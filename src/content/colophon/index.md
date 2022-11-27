@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/home.njk
 permalink: /colophon.html
 title: Colophon
 ---
