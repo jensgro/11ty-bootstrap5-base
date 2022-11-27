@@ -1,0 +1,20 @@
+{
+  "primary": [
+    {
+      "label": "item 1",
+      "url": "#"
+    },
+    {
+      "label": "item 2",
+      "url": "#"
+    },
+    {
+      "label": "item 3",
+      "url": "#"
+    },
+    {
+      "label": "item 4",
+      "url": "#"
+    }
+  ]
+}
