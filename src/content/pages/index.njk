@@ -1,38 +1,16 @@
 ---
 layout: layouts/home.njk
-title: "My title"
+title: "Übersicht über die Sites"
 subline: "My subtitle"
 permalink: /index.html
 bodyClass: index
-eleventyNavigation:
-  key: home
-  order: 1
 ---
+{%- extends "layouts/home.njk" -%}
+{% block content %}
+  <ul>
+    <li><a href="site1/index.html">Site 1</a></li>
+    <li><a href="site2/index.html">Site 2</a></li>
+    <li><a href="site3/index.html">Site 3</a></li>
+  </ul>
 
-{%- for item in categories %}
-    <h2>{{ item.title }}</h2>
-    {% if "post" in item.cat %}
-      {% for post in collections.post %}
-        {% if loop.first %}<ul>{% endif %}
-          {% include "partials/link-list-item.njk" %}
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% if "category2" in item.cat %}
-      {% for post in collections.cat2 %}
-        {% if loop.first %}<ul>{% endif %}
-          {% include "partials/link-list-item.njk" %}
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% if "category3" in item.cat %}
-      {% for post in collections.cat3 %}
-        {% if loop.first %}<ul>{% endif %}
-          {% include "partials/link-list-item.njk" %}
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
-    {% endif %}
-
-{% endfor -%}
+{% endblock %}

@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/site2.njk",
+  "permalink": "site2/{{ page.fileSlug }}.html",
+  "bodyClass": "site2",
+  "tags": "site2"
+}
