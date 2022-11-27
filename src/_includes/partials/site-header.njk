@@ -1,9 +1,15 @@
-<!-- ====== Header -->
 {% if templateClass == "tmpl-home" %}
   {% include "partials/site-header/home.njk" %}
 {% endif %}
 
-{% if templateClass == "tmpl-post" %}
-  {% include "partials/site-header/post.njk" %}
+{% if templateClass == "tmpl-site1" %}
+  {% include "partials/site-header/site1.njk" %}
 {% endif %}
-<!-- END ======= Header -->
+
+{% if templateClass == "tmpl-site2" %}
+  {% include "partials/site-header/site2.njk" %}
+{% endif %}
+
+{% if templateClass == "tmpl-site3" %}
+  {% include "partials/site-header/site3.njk" %}
+{% endif %}
