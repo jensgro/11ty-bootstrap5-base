@@ -1,9 +1,7 @@
 const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // filters
 const htmlDateString = require("./src/_11ty/filters/date.js").htmlDateString;
@@ -14,9 +12,7 @@ const post = require("./src/_11ty/collections/post.js");
 const postDescending = require("./src/_11ty/collections/postDescending.js");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addFilter("htmlDateString", htmlDateString);
   eleventyConfig.addFilter("head", head);
@@ -28,7 +24,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({"./src/assets/img": "/img"});
   eleventyConfig.addPassthroughCopy("css");
-  // eleventyConfig.addPassthroughCopy({"./src/assets/scss/fonts": "css/fonts"});
+  eleventyConfig.addPassthroughCopy({"./src/assets/scss/fonts": "css/fonts"});
   eleventyConfig.addPassthroughCopy({"./src/static/":"/"});
 
   /* Markdown Overrides */

@@ -22,11 +22,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-navigation": "^0.3.2",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
     "autoprefixer": "^10.4.13",
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "cssnano": "^5.1.14",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
