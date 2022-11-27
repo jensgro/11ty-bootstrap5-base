@@ -2,4 +2,8 @@
 title: "My second post"
 ---
 {%- extends "layouts/site1.njk" -%}
-<h2>{{tags}}</h2>
+{% block content %}
+
+  {% include "src/_includes/partials/productpage/hero.njk" %}
+
+{% endblock %}

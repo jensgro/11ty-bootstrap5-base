@@ -22,7 +22,9 @@
   <body class="{{ class }}">
       {% include "partials/navigation.njk" %}
       {% include "partials/site-header.njk" %}
-      {{ content | safe }}
+      {% block main %}
+        {{ content | safe }}
+      {% endblock %}
       {% include "partials/footer.njk" %}
   </body>
 </html>
