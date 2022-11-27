@@ -2,10 +2,10 @@
 templateClass: tmpl-site1
 ---
 {%- extends "layouts/base.njk" -%}
-{% block main %}
+{%- block main -%}
   <div class="container">
     <main>
-          {% block content %}{% endblock %}
+          {%- block content -%}{%- endblock -%}
     </main>
   </div>
-{% endblock %}
+{%- endblock -%}

@@ -1,5 +1,0 @@
-{
-  "permalink": "site1/{{ page.fileSlug }}.html",
-  "bodyClass": "site1",
-  "tags": "site1"
-}

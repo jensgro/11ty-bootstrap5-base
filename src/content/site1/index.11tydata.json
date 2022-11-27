@@ -1,0 +1,24 @@
+{
+  "title": "Site 1 - index page v2",
+  "permalink": "site1/index.html",
+  "hero": {
+    "headline": "Another punny headline",
+    "lead": "And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.",
+    "link": {
+      "url": "#",
+      "text": "Coming soon"
+    }
+  },
+  "twoImage1": {
+    "headline1": "Headline nr. 1",
+    "lead1": "And an even wittier subheading.",
+    "headline2": "Headline nr. 2",
+    "lead2": "And another even wittier subheading."
+  },
+  "twoImage2": {
+    "headline1": "Headline nr. 3",
+    "lead1": "And an even wittier subheading.",
+    "headline2": "Headline nr. 4",
+    "lead2": "And another even wittier subheading."
+  }
+}

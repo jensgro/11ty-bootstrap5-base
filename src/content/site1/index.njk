@@ -1,9 +1,10 @@
----
-title: "My second post"
----
 {%- extends "layouts/site1.njk" -%}
-{% block content %}
-
+{%- block content %}
   {% include "src/_includes/partials/productpage/hero.njk" %}
 
-{% endblock %}
+  {% set twoImage = twoImage1 %}
+  {% include "src/_includes/partials/productpage/two-image-containers.njk" %}
+
+  {% set twoImage = twoImage2 %}
+  {% include "src/_includes/partials/productpage/two-image-containers.njk" %}
+{% endblock -%}
