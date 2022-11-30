@@ -1,0 +1,42 @@
+
+{
+  "card": {
+    "headline": {
+      "text": "Headline, Level 3",
+      "level": 3
+    },
+    "image": {
+      "place": "top",
+      "url": "#",
+      "alttext": "Alt Text"
+    },
+    "text": "lorem und so weiter",
+    "link": {
+      "url": "#",
+      "text": "weiter",
+      "button": "secondary"
+    }
+  },
+  "card2": {
+    "headline": {
+      "text": "Headline, Level 2",
+      "level": 2
+    },
+    "image": {
+      "place": "bottom",
+      "url": "#",
+      "alttext": "Alt Text"
+    },
+    "text": "lorem und so weiter",
+    "link": {
+      "url": "#",
+      "text": "weiter",
+      "button": "secondary"
+    }
+  },
+  "listgroup": [
+    "eintrag 1",
+    "eintrag 2",
+    "eintrag 3"
+  ]
+}

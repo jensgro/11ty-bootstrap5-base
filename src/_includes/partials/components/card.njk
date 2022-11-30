@@ -1,0 +1,33 @@
+<div class="card">
+  {% if "top" in card.image.place %}
+  <img src="{{card.image.url}}" class="card-img-top" alt="{{card.image.alttext}}">
+  {% endif %}
+  <div class="card-body">
+    <h{{card.headline.level}} class="card-title">{{ card.headline.text }}</h{{card.headline.level}}>
+    <p class="card-text">{{ card.text }}</p>
+    <a href="{{ card.link.url }}" class="btn btn-{{ card.link.button }}">{{ card.link.text }}</a>
+  </div>
+  {% if "bottom" in card.image.place %}
+  <img src="{{card.image.url}}" class="card-img-bottom" alt="{{card.image.alttext}}">
+  {% endif %}
+</div>
+{#
+{
+  "card": {
+    "headline": {
+      "text": "",
+      "level": 3
+    },
+    "image": {
+      "place": "top",
+      "url": "",
+      "alttext": ""
+    },
+    "text": "",
+    "link": {
+      "url": "",
+      "text": "",
+      "button": ""
+    }
+  }
+} #}

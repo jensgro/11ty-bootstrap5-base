@@ -4,6 +4,12 @@ title: "My first post in cat2"
 {%- extends "layouts/site2.njk" -%}
 {% block content %}
 
-  <p>test</p>
 
+  {% set card = card %}
+  {% include "src/_includes/partials/components/card.njk" %}
+
+  {% set card = card2 %}
+  {% include "src/_includes/partials/components/card.njk" %}
+
+  {% include "src/_includes/partials/components/list-group.njk" %}
 {% endblock %}
